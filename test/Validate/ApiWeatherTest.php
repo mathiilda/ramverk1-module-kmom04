@@ -1,6 +1,6 @@
 <?php
 
-namespace Anax\Validate;
+namespace mabw\Validate;
 
 use Anax\DI\DIMagic;
 use Anax\Response\ResponseUtility;

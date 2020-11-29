@@ -1,6 +1,6 @@
 <?php
 
-namespace Anax\Validate;
+namespace mabw\Validate;
 
 use Anax\Commons\ContainerInjectableInterface;
 use Anax\Commons\ContainerInjectableTrait;
