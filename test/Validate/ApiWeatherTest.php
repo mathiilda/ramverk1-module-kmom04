@@ -24,7 +24,8 @@ class ApiWeatherTest extends TestCase
 
     public function testIndex()
     {
-        $_POST["ip"] = "8.8.8.8";
+        $_POST["ip"] = "172.217.21.142";
+        $_POST["test"] = true;
         $res = $this->controller->indexAction();
         $this->assertIsArray($res);
     }
@@ -32,6 +33,7 @@ class ApiWeatherTest extends TestCase
     public function testIndexNull()
     {
         $_POST["ip"] = null;
+        $_POST["test"] = true;
         $res = $this->controller->indexAction();
         $this->assertIsString($res);
     }

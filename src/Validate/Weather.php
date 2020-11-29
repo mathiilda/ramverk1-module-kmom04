@@ -11,12 +11,14 @@ class Weather implements ContainerInjectableInterface
 
     public function getToken()
     {
-        if (file_exists("../config/keys.php")) {
-            $keys = require("../config/keys.php");
-            $token = $keys["weather"];
+        if (isset($_POST["test"])) {
+            $path = "config/keys.php";
         } else {
-            $token = file_get_contents("tokenWeather.txt", FILE_USE_INCLUDE_PATH);
+            $path = "../config/keys.php";
         }
+
+        $keys = require($path);
+        $token = $keys["weather"];
 
         return $token;
     }

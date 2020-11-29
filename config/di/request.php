@@ -1,16 +1,15 @@
 <?php
 /**
- * Weather-class.
+ * Configuration file for request service.
  */
 return [
-
     // Services to add to the container.
     "services" => [
-        "weather" => [
+        "request" => [
             "shared" => true,
             "callback" => function () {
-                $obj = new \mabw\Validate\Weather();
-                $obj->setDi($this);
+                $obj = new \Anax\Request\Request();
+                $obj->init();
                 return $obj;
             }
         ],

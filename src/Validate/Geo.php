@@ -6,12 +6,14 @@ class Geo
 {
     public function getGeo($ipAddress)
     {
-        if (file_exists("../config/keys.php")) {
-            $keys = require("../config/keys.php");
-            $token = $keys["geo"];
+        if (isset($_POST["test"])) {
+            $path = "config/keys.php";
         } else {
-            $token = file_get_contents("token.txt", FILE_USE_INCLUDE_PATH);
+            $path = "../config/keys.php";
         }
+
+        $keys = require($path);
+        $token = $keys["geo"];
 
         $curl = curl_init();
         $url = "https://ipinfo.io/${ipAddress}/json?token=${token}";

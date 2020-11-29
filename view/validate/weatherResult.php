@@ -41,7 +41,6 @@
         var lat;
         var lon;
 
-        console.log(lat, lon);
         mapboxgl.accessToken = 'pk.eyJ1IjoibWF0aGlsZGExNyIsImEiOiJja2hwMmFvZHQwYzFzMnltamc0NXlwcDF4In0._gVZNXuw_NLTmIgRlILzXA';
         var map = new mapboxgl.Map({
         container: 'map',

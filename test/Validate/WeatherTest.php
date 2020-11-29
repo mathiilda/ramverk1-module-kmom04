@@ -31,6 +31,7 @@ class WeatherTest extends TestCase
     public function testShowResult()
     {
         $_POST["ip"] = "8.8.8.8";
+        $_POST["test"] = true;
         $res = $this->controller->showResultAction();
         $this->assertInstanceOf(ResponseUtility::class, $res);
     }
@@ -38,6 +39,7 @@ class WeatherTest extends TestCase
     public function testShowResultFail()
     {
         $_POST["ip"] = "8.8.8.8dsadasdsa";
+        $_POST["test"] = true;
         $res = $this->controller->showResultAction();
         $this->assertInstanceOf(ResponseUtility::class, $res);
     }

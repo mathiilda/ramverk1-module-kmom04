@@ -1,16 +1,17 @@
 <?php
 /**
- * Weather-class.
+ * Configuration file for DI container.
  */
 return [
 
     // Services to add to the container.
     "services" => [
-        "weather" => [
+        "response" => [
             "shared" => true,
+            //"callback" => "\Anax\Response\Response",
             "callback" => function () {
-                $obj = new \mabw\Validate\Weather();
-                $obj->setDi($this);
+                $obj = new \Anax\Response\ResponseUtility();
+                $obj->setDI($this);
                 return $obj;
             }
         ],
