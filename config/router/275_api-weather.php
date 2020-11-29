@@ -7,7 +7,7 @@ return [
         [
             "info" => "Ip api.",
             "mount" => "apiWeather",
-            "handler" => "\Anax\Validate\ApiWeatherController",
+            "handler" => "\mabw\Validate\ApiWeatherController",
         ],
     ]
 ];
