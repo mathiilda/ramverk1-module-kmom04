@@ -6,6 +6,15 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
 
+<style>
+#map {
+    width: 50%; height: 400px;
+}
+
+.mapContainer {
+    display: flex; justify-content: space-between;
+}
+</style>
 
 <article class="article">
     <h1 class="heading">Resultat</h1>
