@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mathiilda/ramverk1-module-kmom04.svg?branch=main)](https://travis-ci.com/mathiilda/ramverk1-module-kmom04)
+
 # Weather-module (kmom04, ramverk1)
 
 1. Run <code>composer require mabw/weather-module</code>. 
