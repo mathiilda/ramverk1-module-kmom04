@@ -36,6 +36,13 @@ class WeatherTest extends TestCase
         $this->assertInstanceOf(ResponseUtility::class, $res);
     }
 
+    public function testShowResultIp6() {
+        $_POST["ip"] = "2001:4860:4860::8888";
+        $_POST["test"] = true;
+        $res = $this->controller->showResultAction();
+        $this->assertInstanceOf(ResponseUtility::class, $res);
+    }
+
     public function testShowResultFail()
     {
         $_POST["ip"] = "8.8.8.8dsadasdsa";
