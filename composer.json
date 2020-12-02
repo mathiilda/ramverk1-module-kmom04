@@ -10,7 +10,6 @@
         }
     },
     "require": {
-        "php": "^7.3",
         "anax/anax-ramverk1-me": "^1.0.0"
     },
     "require-dev": {
