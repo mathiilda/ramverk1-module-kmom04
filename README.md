@@ -2,6 +2,7 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mathiilda/ramverk1-module-kmom04/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/mathiilda/ramverk1-module-kmom04/?branch=main)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/mathiilda/ramverk1-module-kmom04/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
 [![Build Status](https://scrutinizer-ci.com/g/mathiilda/ramverk1-module-kmom04/badges/build.png?b=main)](https://scrutinizer-ci.com/g/mathiilda/ramverk1-module-kmom04/build-status/main)
+[![Build Status](https://scrutinizer-ci.com/g/mathiilda/ramverk1-module-kmom04/badges/build.png?b=main)](https://circleci.com/mathiilda/ramverk1-module-kmom04/circleci-cli.svg?style=svg)
 
 # Weather-module (kmom04, ramverk1)
 
