@@ -1,8 +1,8 @@
 imports:
     - php
 
-filter:
-    excluded_paths: [vendor/*, test/*]
+# filter:
+#     excluded_paths: [vendor/*, test/*]
 
 build:
     nodes:
@@ -18,4 +18,16 @@ build:
                         command: "make phpunit"
                         coverage:
                             file: "build/coverage.clover"
-                            format: "php-clover"
+                            format: "clover"
+
+
+        coverage:
+          tests:
+            override:
+              - command: "make phpunit"
+                coverage:
+                  file: "test/*"
+
+                  # These formats are supported:
+                  # clover, cobertura, jacoco, python-cc, ruby-cc, go-cc, lcov
+                  format: "clover"
