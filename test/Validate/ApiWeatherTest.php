@@ -7,7 +7,7 @@ use Anax\Response\ResponseUtility;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Test features from kmom01.
+ * Test features from kmom05.
  */
 class ApiWeatherTest extends TestCase
 {
